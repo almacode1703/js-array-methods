@@ -17,16 +17,16 @@
 
         let arr = [12, 7, 99, 2, 16, 1, 90]
 
-        let sortedArrAsc = arr.sort((a, b) => {
+        let sortedArrAsc = [...arr].sort((a, b) => {
             return a - b
         })
 
-        let sortedArrDesc = arr.sort((a, b) => {
+        let sortedArrDesc = [...arr].sort((a, b) => {
             return b - a
         })
 
         document.getElementById("demo1").innerHTML = sortedArrAsc;
-        document.getElementById("demo1").innerHTML = sortedArrDesc;
+        document.getElementById("demo2").innerHTML = sortedArrDesc;
 
 
     </script>
